@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#fcf9f9"
     tools:context="com.example.akshit.devclubassing3.MainActivity"
     tools:layout_editor_absoluteY="81dp">
 
@@ -11,13 +12,14 @@
         android:id="@+id/clicks"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_marginBottom="0dp"
+        android:background="@null"
         android:editable="false"
         android:ems="10"
         android:inputType="none"
         android:text="0"
         android:textAlignment="center"
         android:textSize="106dp"
+        android:textColor="#b4b4b4"
         app:layout_constraintBottom_toTopOf="@+id/button1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -28,7 +30,7 @@
     <Button
         android:id="@+id/button1"
         android:layout_width="102sp"
-        android:layout_height="72dp"
+        android:layout_height="79dp"
         android:layout_marginBottom="20dp"
         android:elevation="0dp"
         android:text="+"
@@ -43,7 +45,7 @@
     <Button
         android:id="@+id/button2"
         android:layout_width="102sp"
-        android:layout_height="67dp"
+        android:layout_height="76dp"
         android:layout_marginBottom="98dp"
         android:layout_marginStart="8dp"
         android:text="-"
@@ -77,5 +79,27 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_begin="20dp" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        android:text="Step"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="447dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintStart_toStartOf="@+id/clicks"
+        app:layout_constraintTop_toTopOf="@+id/clicks" />
 
 </android.support.constraint.ConstraintLayout>
